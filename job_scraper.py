@@ -2,23 +2,8 @@
 Job Scraper - Scrapes Indeed & LinkedIn for job listings and sends email notifications
 Author: Logan Blaesing
  
-Setup Instructions:
-1. Install dependencies:
-   python3 -m pip install requests beautifulsoup4 schedule
- 
-2. Fill in your config below (EMAIL, PASSWORD, SEARCH TERMS) Email Sender and Receiver CAN be the same address (and probably should be)
- 
-3. For Gmail: enable "App Passwords" in your Google account settings
-   and use the generated app password as EMAIL_PASSWORD
- 
-4. Run the script:
-   python job_scraper.py
- 
-The script will:
-- Run once immediately
-- Then check again every 24 hours
-- Only notify you about NEW listings it hasn't seen before
-- Save seen jobs to seen_jobs.json so it persists between runs
+See README for setup instructions
+
 """
  
 import requests
